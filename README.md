@@ -1,4 +1,4 @@
-# Swift lang opensource proxy application #
+# Swift lang opensource VPN application #
 
 这是一个利用Network extension framework 的项目
 
