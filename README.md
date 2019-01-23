@@ -6,7 +6,7 @@
 
 * Swift lang opensource proxy application
 * libsodium,shadowsocks libev port
-* exculde XSocket not open source(if you want to  build, req a issue)
+* exculde SFSocket not open source(if you want to  build, req a issue)
 * use Open Source framework XProxy,XSocket,XRuler,Xcon,libkcp (see Cartfile.resolved)
 * include iOS app and macOS app 
 ### other depend Frameworks###
