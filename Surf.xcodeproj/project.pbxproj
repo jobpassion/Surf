@@ -63,7 +63,6 @@
 		6920758D1CE77C29000F1ED9 /* HostEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6920758C1CE77C29000F1ED9 /* HostEditTableViewController.swift */; };
 		692128521E9C7AC500560DEC /* PacketTunnel-iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 578ED9291C03181200913B2F /* PacketTunnel-iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		69263EF31EE504BA005F0C76 /* snappy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69263EEB1EE50491005F0C76 /* snappy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		69263F021EE511A3005F0C76 /* snappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69263EEB1EE50491005F0C76 /* snappy.framework */; };
 		69263F031EE511AA005F0C76 /* SFSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69263EF81EE50C5B005F0C76 /* SFSocket.framework */; };
 		692806351EFA7E7C007FCF6A /* SFSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69263EF81EE50C5B005F0C76 /* SFSocket.framework */; };
 		692806361EFA7E7C007FCF6A /* SFSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69263EF81EE50C5B005F0C76 /* SFSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -134,8 +133,6 @@
 		695EA9AE1E81069000D594CC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695EA9AD1E81069000D594CC /* HistoryViewController.swift */; };
 		69639BC71EE1636700893D18 /* DarwinCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69639BC61EE1636700893D18 /* DarwinCore.framework */; };
 		69639BC91EE1637100893D18 /* DarwinCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69639BC61EE1636700893D18 /* DarwinCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		69639BCE1EE179B400893D18 /* kcp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693B744D1ED9FA7A004C6E87 /* kcp.framework */; };
-		69639BCF1EE179B400893D18 /* kcp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 693B744D1ED9FA7A004C6E87 /* kcp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6964C0B31CF5931A0021897B /* surf.conf in Resources */ = {isa = PBXBuildFile; fileRef = 6964C0B21CF5931A0021897B /* surf.conf */; };
 		6964C0B51CF5AC130021897B /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6964C0B41CF5AC130021897B /* TitleView.swift */; };
 		696573D21DE48EBF00D95D59 /* AdvancedWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696573D01DE48EBF00D95D59 /* AdvancedWindowController.swift */; };
@@ -193,7 +190,6 @@
 		69784D6C1DE0A8DE007E32C2 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69784D421DE0A467007E32C2 /* MMDB.framework */; };
 		69784D6E1DE0A8DE007E32C2 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69784D441DE0A467007E32C2 /* Sodium.framework */; };
 		69784D6F1DE0A8DE007E32C2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69784D451DE0A467007E32C2 /* SwiftyJSON.framework */; };
-		69784D701DE0A8DE007E32C2 /* SystemKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69784D461DE0A467007E32C2 /* SystemKit.framework */; };
 		697B7C3F1DDF41F400584179 /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697B7C3D1DDF41F400584179 /* MMDB.framework */; };
 		697DF0801FFE0C8A00C6A64C /* SurfToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 692D8CF71C6A250400C07B3A /* SurfToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		697DF0821FFE0D0500C6A64C /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69348F311FFB713E007C841C /* Fabric.framework */; };
@@ -217,6 +213,9 @@
 		69A090081C4C83650064D361 /* SampleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A090071C4C83650064D361 /* SampleCell.swift */; };
 		69A0900B1C4C851C0064D361 /* SFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0900A1C4C851C0064D361 /* SFWebViewController.swift */; };
 		69A0900D1C4C8CCC0064D361 /* config.html in Resources */ = {isa = PBXBuildFile; fileRef = 69A0900C1C4C8CCC0064D361 /* config.html */; };
+		69A28A9821F55C82000A52AE /* KCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A28A9721F55C82000A52AE /* KCP.framework */; };
+		69A28A9921F55CCB000A52AE /* KCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A28A9721F55C82000A52AE /* KCP.framework */; };
+		69A28A9A21F55CCB000A52AE /* KCP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69A28A9721F55C82000A52AE /* KCP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69A4ACE41D2E37C7008963FB /* WidgetSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A4ACE31D2E37C7008963FB /* WidgetSelectViewController.swift */; };
 		69A99E491C6A2DBF009EC4C5 /* const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693B603E1C48867500173D0B /* const.swift */; };
 		69A99E4C1C6A2E96009EC4C5 /* SFLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A99E4B1C6A2E96009EC4C5 /* SFLog.swift */; };
@@ -256,8 +255,6 @@
 		69DA26AE2007ABFB0044FA53 /* XRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA26AD2007ABFB0044FA53 /* XRuler.framework */; };
 		69DA26AF2007ABFB0044FA53 /* XRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA26AD2007ABFB0044FA53 /* XRuler.framework */; };
 		69DA26B02007ABFB0044FA53 /* XRuler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA26AD2007ABFB0044FA53 /* XRuler.framework */; };
-		69DA26B22007AC070044FA53 /* Xcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA26B12007AC060044FA53 /* Xcon.framework */; };
-		69DA26B32007AC070044FA53 /* Xcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA26B12007AC060044FA53 /* Xcon.framework */; };
 		69DA26B42007AC070044FA53 /* Xcon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA26B12007AC060044FA53 /* Xcon.framework */; };
 		69DA26B62007AC0F0044FA53 /* XSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA26B52007AC0E0044FA53 /* XSocket.framework */; };
 		69DA26B72007AC0F0044FA53 /* XSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA26B52007AC0E0044FA53 /* XSocket.framework */; };
@@ -286,7 +283,6 @@
 		69DD436B1DDC540800080CF1 /* CocoaAsyncSocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69803E601DD97B6F0047112C /* CocoaAsyncSocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69DD43701DDC540E00080CF1 /* Sodium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69803E6A1DD97BA00047112C /* Sodium.framework */; };
 		69DD43711DDC540E00080CF1 /* Sodium.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69803E6A1DD97BA00047112C /* Sodium.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		69E049B021E60320000FC13E /* KCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E049AE21E602EE000FC13E /* KCP.framework */; };
 		69E049B121E60320000FC13E /* KCP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69E049AE21E602EE000FC13E /* KCP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69E1367F1C7047ED002BFBF2 /* StatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E1367E1C7047ED002BFBF2 /* StatViewController.swift */; };
 		69E136811C704C03002BFBF2 /* AnalyzeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E136801C704C03002BFBF2 /* AnalyzeTableViewController.swift */; };
@@ -348,7 +344,6 @@
 				69852BE91F33010A00EBFC92 /* IoniconsSwift.framework in Embed Frameworks */,
 				69DD43671DDC53C000080CF1 /* SwiftyJSON.framework in Embed Frameworks */,
 				6906B76E1EF36BA600CA66CA /* SwiftyStoreKit.framework in Embed Frameworks */,
-				69639BCF1EE179B400893D18 /* kcp.framework in Embed Frameworks */,
 				69D411B01E975DC30095E683 /* Reachability.framework in Embed Frameworks */,
 				69AD9CCA200354B400C01011 /* XFoundation.framework in Embed Frameworks */,
 				69852BEB1F3313FE00EBFC92 /* SystemKitiOS.framework in Embed Frameworks */,
@@ -359,6 +354,7 @@
 				69303FCB1ECA99940089AFFA /* snappy.framework in Embed Frameworks */,
 				69DD43711DDC540E00080CF1 /* Sodium.framework in Embed Frameworks */,
 				6994E01F1DEFCA37009394F9 /* MMDB.framework in Embed Frameworks */,
+				69A28A9A21F55CCB000A52AE /* KCP.framework in Embed Frameworks */,
 				69639BC91EE1637100893D18 /* DarwinCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -485,7 +481,6 @@
 		693B603C1C479F2A00173D0B /* thanks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thanks.txt; sourceTree = "<group>"; };
 		693B603E1C48867500173D0B /* const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = const.swift; sourceTree = "<group>"; };
 		693B74491ED9FA69004C6E87 /* SFSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFSocket.framework; path = Carthage/Build/iOS/SFSocket.framework; sourceTree = "<group>"; };
-		693B744D1ED9FA7A004C6E87 /* kcp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = kcp.framework; path = Carthage/Build/iOS/kcp.framework; sourceTree = "<group>"; };
 		693DBDFC1C9690F30067595C /* config.pac.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = config.pac.js; sourceTree = "<group>"; };
 		693DBDFE1C96977A0067595C /* SFCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCountry.swift; sourceTree = "<group>"; };
 		693DBE011C969C610067595C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -598,6 +593,7 @@
 		69A090071C4C83650064D361 /* SampleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCell.swift; sourceTree = "<group>"; };
 		69A0900A1C4C851C0064D361 /* SFWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFWebViewController.swift; sourceTree = "<group>"; };
 		69A0900C1C4C8CCC0064D361 /* config.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = config.html; sourceTree = "<group>"; };
+		69A28A9721F55C82000A52AE /* KCP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KCP.framework; path = Carthage/Build/iOS/KCP.framework; sourceTree = "<group>"; };
 		69A4ACE31D2E37C7008963FB /* WidgetSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidgetSelectViewController.swift; sourceTree = "<group>"; };
 		69A742DA1CA15CA90000ABA1 /* libmbedcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmbedcrypto.a; path = share/lib/libmbedcrypto.a; sourceTree = "<group>"; };
 		69A99E4B1C6A2E96009EC4C5 /* SFLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLog.swift; sourceTree = "<group>"; };
@@ -711,9 +707,10 @@
 				69348F3E1FFB7234007C841C /* Xcon.framework in Frameworks */,
 				69DD43661DDC53C000080CF1 /* SwiftyJSON.framework in Frameworks */,
 				69348F3D1FFB7214007C841C /* XSocket.framework in Frameworks */,
-				69639BCE1EE179B400893D18 /* kcp.framework in Frameworks */,
+				69A28A9821F55C82000A52AE /* KCP.framework in Frameworks */,
 				69DD436A1DDC540800080CF1 /* CocoaAsyncSocket.framework in Frameworks */,
 				6970CDDA1CE46701009850DE /* Security.framework in Frameworks */,
+				69A28A9921F55CCB000A52AE /* KCP.framework in Frameworks */,
 				6903CDD620159D1200642B68 /* Crashlytics.framework in Frameworks */,
 				69348F331FFB713F007C841C /* Fabric.framework in Frameworks */,
 				69BD54C51E975C88008F10DC /* Reachability.framework in Frameworks */,
@@ -752,13 +749,11 @@
 				69784D4E1DE0A467007E32C2 /* lwip.framework in Frameworks */,
 				6947D76D1CE4CC340020BBCB /* libresolv.tbd in Frameworks */,
 				69784D491DE0A467007E32C2 /* CocoaAsyncSocket.framework in Frameworks */,
-				69E049B021E60320000FC13E /* KCP.framework in Frameworks */,
 				69784D4C1DE0A467007E32C2 /* DarwinCore.framework in Frameworks */,
 				6906B9011DE1954700A60B66 /* NetworkExtension.framework in Frameworks */,
 				692806351EFA7E7C007FCF6A /* SFSocket.framework in Frameworks */,
 				69784D471DE0A467007E32C2 /* Alamofire.framework in Frameworks */,
 				69DA26C72007ACE20044FA53 /* Reachability.framework in Frameworks */,
-				69DA26B22007AC070044FA53 /* Xcon.framework in Frameworks */,
 				69DA26BE2007AC2B0044FA53 /* XProxy.framework in Frameworks */,
 				69DA26BA2007AC190044FA53 /* XFoundation.framework in Frameworks */,
 			);
@@ -775,17 +770,14 @@
 				69263F031EE511AA005F0C76 /* SFSocket.framework in Frameworks */,
 				69DA26AF2007ABFB0044FA53 /* XRuler.framework in Frameworks */,
 				69784D691DE0A8DE007E32C2 /* DarwinCore.framework in Frameworks */,
-				69263F021EE511A3005F0C76 /* snappy.framework in Frameworks */,
 				69DA26B72007AC0F0044FA53 /* XSocket.framework in Frameworks */,
 				69784D6B1DE0A8DE007E32C2 /* lwip.framework in Frameworks */,
 				69784D6C1DE0A8DE007E32C2 /* MMDB.framework in Frameworks */,
 				69784D6E1DE0A8DE007E32C2 /* Sodium.framework in Frameworks */,
-				69DA26B32007AC070044FA53 /* Xcon.framework in Frameworks */,
 				69DA26BB2007AC190044FA53 /* XFoundation.framework in Frameworks */,
 				69784D6F1DE0A8DE007E32C2 /* SwiftyJSON.framework in Frameworks */,
 				69DA26BF2007AC2B0044FA53 /* XProxy.framework in Frameworks */,
 				6906B9031DE1955400A60B66 /* NetworkExtension.framework in Frameworks */,
-				69784D701DE0A8DE007E32C2 /* SystemKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -886,10 +878,8 @@
 				69366E581BFECBE700AE123D /* Surf */,
 				578ED92A1C03181300913B2F /* PacketTunnel */,
 				69C4EE2A1C2919010020FBF8 /* Surf-Mac */,
-				6989A5001C31042D00DD1435 /* TunServerUI */,
 				692D8CFB1C6A250400C07B3A /* SurfToday */,
 				696573EE1DE4959B00D95D59 /* Surf-Today */,
-				693AAE0F200EDA4E009E481E /* Kwazii */,
 				693AAE26200EDF82009E481E /* XDataService */,
 				692D8CF81C6A250400C07B3A /* Frameworks */,
 				69366E571BFECBE700AE123D /* Products */,
@@ -948,13 +938,6 @@
 			path = Surf;
 			sourceTree = "<group>";
 		};
-		693AAE0F200EDA4E009E481E /* Kwazii */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Kwazii;
-			sourceTree = "<group>";
-		};
 		693AAE26200EDF82009E481E /* XDataService */ = {
 			isa = PBXGroup;
 			children = (
@@ -969,6 +952,7 @@
 		693AAE74200EE991009E481E /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				69A28A9721F55C82000A52AE /* KCP.framework */,
 				6903CDD520159D1100642B68 /* Crashlytics.framework */,
 				69348F311FFB713E007C841C /* Fabric.framework */,
 				697B7C3D1DDF41F400584179 /* MMDB.framework */,
@@ -993,7 +977,6 @@
 				6906B7671EF36B6700CA66CA /* Charts.framework */,
 				6906B7651EF36B5B00CA66CA /* SwiftyStoreKit.framework */,
 				69639BC61EE1636700893D18 /* DarwinCore.framework */,
-				693B744D1ED9FA7A004C6E87 /* kcp.framework */,
 				693B74491ED9FA69004C6E87 /* SFSocket.framework */,
 				69303FC21ECA99610089AFFA /* snappy.framework */,
 				690AB8841E97652F001A6C3A /* ObjectMapper.framework */,
@@ -1137,21 +1120,6 @@
 				693DBE011C969C610067595C /* data.json */,
 			);
 			name = config;
-			sourceTree = "<group>";
-		};
-		6989A5001C31042D00DD1435 /* TunServerUI */ = {
-			isa = PBXGroup;
-			children = (
-				6989A50F1C3105B800DD1435 /* server */,
-			);
-			path = TunServerUI;
-			sourceTree = "<group>";
-		};
-		6989A50F1C3105B800DD1435 /* server */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = server;
 			sourceTree = "<group>";
 		};
 		6989AB031C312A3400DD1435 /* Shared */ = {
@@ -2383,10 +2351,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 745WQDK4L7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Surf-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -2414,10 +2379,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 745WQDK4L7;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Surf-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

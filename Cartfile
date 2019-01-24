@@ -1,4 +1,4 @@
-github "yarshure/cone" "master"
+github "yarshure/SFSocket" "master"
 github "Alamofire/Alamofire"
 github "bizz84/SwiftyStoreKit"
 github "danielgindi/Charts" "v3.0.5"
