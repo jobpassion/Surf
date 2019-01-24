@@ -5,17 +5,11 @@
 //  Created by yarshure on 16/1/4.
 //  Copyright © 2016年 yarshure. All rights reserved.
 //
-//ALWAYS_SEARCH_USER_PATHS = YES
-//FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/Surf-Mac"
-//HEADER_SEARCH_PATHS = $(inherited) "$(SRCROOT)/Shared/header" "$(SRCROOT)/MMDB" "$(SRCROOT)/shared/lwip/badvpn" "$(SRCROOT)/libsodium-ios/include" "$(SRCROOT)/lib"
-//USER_HEADER_SEARCH_PATHS = $(inherited) "$(SRCROOT)/Shared/header" "$(SRCROOT)/shared/lwip/src/include/"** "$(SRCROOT)/shared/lwip/custom" "$(SRCROOT)/Shared/proxy/ss"
-//OTHER_CFLAGS = $(inherited) -isystem
-//OTHER_LDFLAGS = $(inherited) -lsodium  -lmbedcrypto
-//LIBRARY_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)"
+
 
 FRAMEWORK_SEARCH_PATHS = $(inherited) //"$(PROJECT_DIR)/Surf-Mac"
-HEADER_SEARCH_PATHS = $(inherited)  "$(PROJECT_DIR)/share/include" "$(SRCROOT)/share/include/sodium" "$(SRCROOT)/Shared/header" "$(SRCROOT)/MMDB" "$(SRCROOT)/shared/lwip/badvpn"
-USER_HEADER_SEARCH_PATHS = $(inherited) "$(SRCROOT)/Shared/header" "$(SRCROOT)/shared/lwip/src/include/"** "$(SRCROOT)/shared/lwip/custom" "$(SRCROOT)/Shared/proxy/ss"
+HEADER_SEARCH_PATHS = $(inherited)
+USER_HEADER_SEARCH_PATHS = $(inherited) 
 OTHER_CFLAGS = $(inherited) -isystem
 OTHER_LDFLAGS = $(inherited) //-lsodium -lcrypto//-mbedcrypto // -lcrypto //
 LIBRARY_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)"

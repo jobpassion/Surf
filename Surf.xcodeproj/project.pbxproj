@@ -153,7 +153,6 @@
 		696847791D504E8A005E17C2 /* SFAppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696847771D504E87005E17C2 /* SFAppExtension.swift */; };
 		696DD2DA1C7B132E00C34416 /* OndemandController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DD2D91C7B132E00C34416 /* OndemandController.swift */; };
 		696E73B51C44CEEA00DF9A39 /* DataShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E73B31C44CEEA00DF9A39 /* DataShare.swift */; };
-		696E73B61C44CEEA00DF9A39 /* Socks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E73B41C44CEEA00DF9A39 /* Socks.swift */; };
 		696E73B91C44E59D00DF9A39 /* LogListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696E73B81C44E59D00DF9A39 /* LogListTableViewController.swift */; };
 		69707AF01EF37F2C00C7BD9D /* NetworkActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69707AEE1EF37F2C00C7BD9D /* NetworkActivityIndicatorManager.swift */; };
 		69707AF11EF37F2C00C7BD9D /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69707AEF1EF37F2C00C7BD9D /* BuyViewController.swift */; };
@@ -214,7 +213,6 @@
 		69A0900B1C4C851C0064D361 /* SFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A0900A1C4C851C0064D361 /* SFWebViewController.swift */; };
 		69A0900D1C4C8CCC0064D361 /* config.html in Resources */ = {isa = PBXBuildFile; fileRef = 69A0900C1C4C8CCC0064D361 /* config.html */; };
 		69A28A9821F55C82000A52AE /* KCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A28A9721F55C82000A52AE /* KCP.framework */; };
-		69A28A9921F55CCB000A52AE /* KCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69A28A9721F55C82000A52AE /* KCP.framework */; };
 		69A28A9A21F55CCB000A52AE /* KCP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69A28A9721F55C82000A52AE /* KCP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69A4ACE41D2E37C7008963FB /* WidgetSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A4ACE31D2E37C7008963FB /* WidgetSelectViewController.swift */; };
 		69A99E491C6A2DBF009EC4C5 /* const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693B603E1C48867500173D0B /* const.swift */; };
@@ -578,8 +576,6 @@
 		698705781C0FD46500783358 /* BarcodeScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScanViewController.swift; sourceTree = "<group>"; };
 		6987057D1C0FE8A200783358 /* HelpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpTableViewController.swift; sourceTree = "<group>"; };
 		6987057F1C0FE8F300783358 /* AcknowledgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcknowledgeViewController.swift; sourceTree = "<group>"; };
-		6989AC011C312A3400DD1435 /* StackHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackHelper.h; sourceTree = "<group>"; };
-		6989AC021C312A3400DD1435 /* StackHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackHelper.m; sourceTree = "<group>"; };
 		698BFE201C3A205A00CED9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Mac/Info.plist; sourceTree = "<group>"; };
 		698BFE211C3A206300CED9EC /* PacketTunnel_Mac.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PacketTunnel_Mac.entitlements; path = Mac/PacketTunnel_Mac.entitlements; sourceTree = "<group>"; };
 		698BFE251C3A20FC00CED9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOS/Info.plist; sourceTree = "<group>"; };
@@ -710,7 +706,6 @@
 				69A28A9821F55C82000A52AE /* KCP.framework in Frameworks */,
 				69DD436A1DDC540800080CF1 /* CocoaAsyncSocket.framework in Frameworks */,
 				6970CDDA1CE46701009850DE /* Security.framework in Frameworks */,
-				69A28A9921F55CCB000A52AE /* KCP.framework in Frameworks */,
 				6903CDD620159D1200642B68 /* Crashlytics.framework in Frameworks */,
 				69348F331FFB713F007C841C /* Fabric.framework in Frameworks */,
 				69BD54C51E975C88008F10DC /* Reachability.framework in Frameworks */,
@@ -1142,8 +1137,6 @@
 		6989ABFA1C312A3400DD1435 /* tun */ = {
 			isa = PBXGroup;
 			children = (
-				6989AC011C312A3400DD1435 /* StackHelper.h */,
-				6989AC021C312A3400DD1435 /* StackHelper.m */,
 				692B4FFB1C71A0E600BB793B /* SFAppIden.swift */,
 				692B4FFD1C71A11300BB793B /* useragents.plist */,
 				696847771D504E87005E17C2 /* SFAppExtension.swift */,
@@ -1384,7 +1377,7 @@
 			attributes = {
 				LastSwiftMigration = 0730;
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = A.BIG.T;
 				TargetAttributes = {
 					578ED9281C03181200913B2F = {
@@ -1713,7 +1706,6 @@
 				69366E5E1BFECBE700AE123D /* SecondViewController.swift in Sources */,
 				6964C0B51CF5AC130021897B /* TitleView.swift in Sources */,
 				69707AF01EF37F2C00C7BD9D /* NetworkActivityIndicatorManager.swift in Sources */,
-				696E73B61C44CEEA00DF9A39 /* Socks.swift in Sources */,
 				69A99E4C1C6A2E96009EC4C5 /* SFLog.swift in Sources */,
 				5756A9591BFF1DA4006C08BB /* AddEditProxyController.swift in Sources */,
 				696847791D504E8A005E17C2 /* SFAppExtension.swift in Sources */,
@@ -1944,10 +1936,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/TunServerUI",
-					"$(PROJECT_DIR)/lib",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/iosLib",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -1990,10 +1979,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/TunServerUI",
-					"$(PROJECT_DIR)/lib",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/iosLib",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -2036,8 +2022,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/iosLib",
 				);
 				INFOPLIST_FILE = SurfToday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2068,8 +2052,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/iosLib",
 				);
 				INFOPLIST_FILE = SurfToday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -2215,7 +2197,6 @@
 					"$(PROJECT_DIR)/lib",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/iosLib",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2258,7 +2239,6 @@
 					"$(PROJECT_DIR)/lib",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
-					"$(PROJECT_DIR)/iosLib",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
