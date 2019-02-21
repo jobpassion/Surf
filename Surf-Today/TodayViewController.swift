@@ -20,7 +20,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
     @IBOutlet weak var connectButton:NSButton!
     var timer:Timer?
     override var nibName: NSNib.Name {
-        return NSNib.Name.init("TodayViewController")
+        return "TodayViewController"
     }
 
     @IBAction func startStopToggled(_ sender:AnyObject) {
@@ -122,32 +122,32 @@ class TodayViewController: NSViewController, NCWidgetProviding {
         let  status:NEVPNStatus = connection.status
         switch status{
         case .disconnected:
-            iconView.image =  NSImage.init(named:NSImage.Name(rawValue: "NSStatusPartiallyAvailable"))
+            iconView.image =  NSImage.init(named:"NSStatusPartiallyAvailable")
             titleField.stringValue = "Disconnected"
             connectButton.title = "Connect"
             timeField.isHidden = true
         case .invalid:
-            iconView.image = NSImage.init(named: NSImage.Name(rawValue: "NSStatusUnavailable"))
+            iconView.image = NSImage.init(named: "NSStatusUnavailable")
             
             titleField.stringValue = "Disconnected"
             timeField.isHidden = true
         case .connected:
-            iconView.image = NSImage.init(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            iconView.image = NSImage.init(named:"NSStatusAvailable")
             timeField.isHidden = false
             titleField.stringValue = "Connected"
             connectButton.title = "Disconnect"
             
         case .connecting:
-            iconView.image = NSImage.init(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            iconView.image = NSImage.init(named:"NSStatusAvailable")
             timeField.isHidden = true
             titleField.stringValue = "Connecting"
         case .disconnecting:
-            iconView.image = NSImage.init(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            iconView.image = NSImage.init(named:"NSStatusAvailable")
             
             timeField.isHidden = true
             titleField.stringValue = "NSStatusAvailable"
         case .reasserting:
-            iconView.image = NSImage.init(named:NSImage.Name(rawValue: "RedDot"))
+            iconView.image = NSImage.init(named:"RedDot")
             
             timeField.isHidden = true
            titleField.stringValue = "NSStatusPartiallyAvailable"

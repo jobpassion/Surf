@@ -259,7 +259,7 @@ class OndemandController: SFTableViewController,UITextFieldDelegate {
             let title = "Input Domain Name"
             let s = NSMutableAttributedString(string:title)
             _ = (title as NSString)
-            s.addAttributes([NSAttributedStringKey.foregroundColor:color], range: NSMakeRange(0, title.count))
+            s.addAttributes([NSAttributedString.Key.foregroundColor:color], range: NSMakeRange(0, title.count))
             cell.textField?.attributedPlaceholder =  s
 //            cell.valueChanged = {[weak self] (textfield:UITextField) -> Void in
 //                //self!.proxy.proxyName = textfield.text!{
@@ -284,7 +284,7 @@ class OndemandController: SFTableViewController,UITextFieldDelegate {
         }
         return true
     }
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
     
     

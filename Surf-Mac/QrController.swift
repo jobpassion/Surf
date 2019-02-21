@@ -47,9 +47,9 @@ public class QrController: NSObject,AVCaptureVideoDataOutputSampleBufferDelegate
             //let input = try! AVCaptureDeviceInput(device: captureDevice)
             
             
-            input = AVCaptureScreenInput.init(displayID: CGMainDisplayID())
+            input = AVCaptureScreenInput.init(displayID: CGMainDisplayID())!
             input?.capturesMouseClicks = false
-            input?.minFrameDuration = CMTimeMake(1, 60);
+            input?.minFrameDuration = CMTimeMake(value: 1, timescale: 60);
             input?.scaleFactor = 0.5
             input?.cropRect = NSScreen.screens.first!.frame
             //self.input.cropRect = [self screenRect];

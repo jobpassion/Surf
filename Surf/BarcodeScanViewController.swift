@@ -25,7 +25,7 @@ public class BarcodeScanViewController: UIViewController,AVCaptureMetadataOutput
     
     weak var delegate:BarcodeScanDelegate?
     func alertMessageAction(message:String,complete:(() -> Void)?) {
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:
@@ -174,7 +174,7 @@ public class BarcodeScanViewController: UIViewController,AVCaptureMetadataOutput
     
     @IBAction func scanbarCodeFromPhotoLibrary(_ sender:AnyObject){
         let picker = UIImagePickerController()
-        let src = UIImagePickerControllerSourceType.savedPhotosAlbum
+        let src = UIImagePickerController.SourceType.savedPhotosAlbum
         picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: src)!
         
         picker.delegate = self
@@ -183,13 +183,16 @@ public class BarcodeScanViewController: UIViewController,AVCaptureMetadataOutput
         }
         
     }
-    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+// Local variable inserted by Swift 4.2 migrator.
+let info = convertFromUIImagePickerControllerInfoKeyDictionary(info)
+
         
         self.dismiss(animated: true) { () -> Void in
             
         }
         
-        let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+        let image = info[convertFromUIImagePickerControllerInfoKey(UIImagePickerController.InfoKey.originalImage)] as! UIImage
         let ciImage:CIImage = CIImage(image: image)!
         var message:String = ""
         let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: nil, options: [CIDetectorAccuracy: CIDetectorAccuracyHigh])
@@ -249,8 +252,8 @@ public class BarcodeScanViewController: UIViewController,AVCaptureMetadataOutput
             transition.duration = ctx.transitionDuration
             
             // Make it fade
-            transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-            transition.type = kCATransitionFade
+            transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+            transition.type = CATransitionType.fade
             self.videoPreviewLayer?.add(transition, forKey: "Fade")
             if size.width > size.height {
                 //land
@@ -266,3 +269,13 @@ public class BarcodeScanViewController: UIViewController,AVCaptureMetadataOutput
     }
 }
 
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKeyDictionary(_ input: [UIImagePickerController.InfoKey: Any]) -> [String: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map {key, value in (key.rawValue, value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromUIImagePickerControllerInfoKey(_ input: UIImagePickerController.InfoKey) -> String {
+	return input.rawValue
+}

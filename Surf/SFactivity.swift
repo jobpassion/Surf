@@ -17,7 +17,7 @@ class SFactivityData:NSObject,UIActivityItemSource{
         return "x"
     }
     
-    public func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivityType?) -> Any? // called to fetch data after an activity is selected. you can return nil.
+    public func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? // called to fetch data after an activity is selected. you can return nil.
     
     {
         return "x"

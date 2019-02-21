@@ -69,7 +69,7 @@ class SFWebViewController: UIViewController,UIWebViewDelegate{
         super.viewDidAppear(animated)
         loadContent()
     }
-      func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool{
+      func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebView.NavigationType) -> Bool{
         return true
     }
     

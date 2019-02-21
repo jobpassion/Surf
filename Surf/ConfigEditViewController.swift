@@ -15,7 +15,7 @@ class ConfigEditViewController: UIViewController {
     var titleView:TitleView?
     @IBOutlet var textView:UITextView!
     func alertMessageAction(_ message:String,complete:(() -> Void)?) {
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:
@@ -56,13 +56,13 @@ class ConfigEditViewController: UIViewController {
         btn.addTarget(self, action: #selector(ConfigEditViewController.doneAction(_:)), for: .touchUpInside)
         navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: btn)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(ConfigEditViewController.keyboardShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(ConfigEditViewController.keyboardHiden(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ConfigEditViewController.keyboardShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ConfigEditViewController.keyboardHiden(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
         // Do any additional setup after loading the view.
     }
     @objc func keyboardShow(_ noti:NSNotification){
         guard let info = noti.userInfo else {return}
-        let keyboardFrameValue:NSValue = info[UIKeyboardFrameEndUserInfoKey] as! NSValue
+        let keyboardFrameValue:NSValue = info[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
         let keyboardFrame = keyboardFrameValue.cgRectValue
         var  contentInsets: UIEdgeInsets  = self.textView.contentInset;
         contentInsets.bottom = keyboardFrame.height;

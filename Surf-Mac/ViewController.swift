@@ -122,22 +122,22 @@ class MainViewController: NSViewController {
         
         switch status{
         case .disconnected:
-            statusView.image =  NSImage.init(named:NSImage.Name(rawValue: "GrayDot"))
+            statusView.image =  NSImage.init(named:"GrayDot")
             SSLog("Disconnected")
         case .invalid:
-            statusView.image = NSImage.init(named: NSImage.Name(rawValue: "RedDot"))
+            statusView.image = NSImage.init(named: "RedDot")
             SSLog("Invalid")
         case .connected:
-            statusView.image = NSImage.init(named:NSImage.Name(rawValue: "GreenDot"))
+            statusView.image = NSImage.init(named:"GreenDot")
             SSLog("Connected")
         case .connecting:
-            statusView.image = NSImage.init(named:NSImage.Name(rawValue: "GreenDot"))
+            statusView.image = NSImage.init(named:"GreenDot")
             SSLog("Connecting")
         case .disconnecting:
-            statusView.image = NSImage.init(named:NSImage.Name(rawValue: "RedDot"))
+            statusView.image = NSImage.init(named:"RedDot")
             SSLog("Disconnecting")
         case .reasserting:
-            statusView.image = NSImage.init(named:NSImage.Name(rawValue: "RedDot"))
+            statusView.image = NSImage.init(named:"RedDot")
             SSLog("Reasserting")
         }
         

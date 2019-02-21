@@ -62,7 +62,7 @@ class TodayViewController: SFTableViewController, NCWidgetProviding {
     var autoRedail = false
     let reachability = Reachability()!
     var charts:[Double] = []
-    override init(style: UITableViewStyle) {
+    override init(style: UITableView.Style) {
         super.init(style: style)
         prepareApp()
         self.proxyGroup =  ProxyGroupSettings.share
@@ -586,6 +586,8 @@ class TodayViewController: SFTableViewController, NCWidgetProviding {
             //size = CGSize.init(width: 0, height: 44 * CGFloat(count))
             self.preferredContentSize = maxSize  //CGSize.init(width:  maxSize.width, height: 88.0)
             
+        @unknown default:
+            break
         }
 
         self.tableView.reloadData()

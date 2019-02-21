@@ -369,9 +369,9 @@ public class AddEditProxyController: SFTableViewController ,BarcodeScanDelegate,
         proxy.kcptun = sender.isOn
         if proxy.kcptun {
             
-            tableView.insertRows(at: [x], with: UITableViewRowAnimation.none)
+            tableView.insertRows(at: [x], with: UITableView.RowAnimation.none)
         }else {
-            tableView.deleteRows(at: [x], with: UITableViewRowAnimation.none)
+            tableView.deleteRows(at: [x], with: UITableView.RowAnimation.none)
         }
         
     }
@@ -497,7 +497,7 @@ public class AddEditProxyController: SFTableViewController ,BarcodeScanDelegate,
                     
                     let s = NSMutableAttributedString(string:placeHold)
                     //let r = (title as NSString)
-                    s.addAttributes([NSAttributedStringKey.foregroundColor:UIColor.cyan], range: NSMakeRange(0, placeHold.count))
+                    s.addAttributes([NSAttributedString.Key.foregroundColor:UIColor.cyan], range: NSMakeRange(0, placeHold.count))
                     cell.textField?.attributedPlaceholder =  s
                     return cell
                 }
@@ -593,7 +593,7 @@ public class AddEditProxyController: SFTableViewController ,BarcodeScanDelegate,
     }
     func showSelectType() {
         
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:

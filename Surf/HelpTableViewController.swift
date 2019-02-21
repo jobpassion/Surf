@@ -41,7 +41,7 @@ class HelpTableViewController: SFTableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.separatorInset=UIEdgeInsetsMake(0,50, 0, 0);
+        tableView.separatorInset=UIEdgeInsets.init(top: 0,left: 50, bottom: 0, right: 0);
         self.title = "Help".localized
         logo?.layer.cornerRadius = 12.0
         logo?.layer.masksToBounds = true
@@ -332,7 +332,7 @@ class HelpTableViewController: SFTableViewController {
         
     }
     func openURL(_ url:URL)  {
-        UIApplication.shared.open(url, options: [:], completionHandler: { fin in
+        UIApplication.shared.open(url, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: { fin in
             if fin {
                 print("open finished")
             }
@@ -411,4 +411,9 @@ class HelpTableViewController: SFTableViewController {
     }
 
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

@@ -37,12 +37,12 @@ class StatCell: NSTableCellView {
         let  status:NEVPNStatus = connection.status
         switch status{
         case .disconnected:
-            imageView?.objectValue =  NSImage.init(named:NSImage.Name(rawValue: "NSStatusPartiallyAvailable"))
+            imageView?.objectValue =  NSImage.init(named:"NSStatusPartiallyAvailable")
             textField?.stringValue = "Disconnected"
             connectButton.title = "Connect"
             
         case .invalid:
-            imageView?.objectValue  = NSImage.init(named: NSImage.Name(rawValue: "NSStatusUnavailable"))
+            imageView?.objectValue  = NSImage.init(named: "NSStatusUnavailable")
             
             textField?.stringValue = "Disconnected"
             
@@ -50,22 +50,22 @@ class StatCell: NSTableCellView {
             let start = connection.connectedDate!
             let now = Date()
             let timeStr = secondToString(second: Int(now.timeIntervalSince(start)))
-            imageView?.objectValue  = NSImage.init(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            imageView?.objectValue  = NSImage.init(named:"NSStatusAvailable")
             
             textField?.stringValue = "Connected "  + timeStr
             connectButton.title = "Disconnect"
             
         case .connecting:
-            imageView?.objectValue  = NSImage.init(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            imageView?.objectValue  = NSImage.init(named:"NSStatusAvailable")
             
             textField?.stringValue = "Connecting"
         case .disconnecting:
-            imageView?.objectValue  = NSImage.init(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            imageView?.objectValue  = NSImage.init(named:"NSStatusAvailable")
             
             
             textField?.stringValue = "Disconnecting"
         case .reasserting:
-            imageView?.objectValue  = NSImage.init(named:NSImage.Name(rawValue: "NSStatusPartiallyAvailable"))
+            imageView?.objectValue  = NSImage.init(named:"NSStatusPartiallyAvailable")
             
             
             textField?.stringValue = "Reasserting"

@@ -185,7 +185,7 @@ class RulesTableViewController: SFTableViewController,AddEditRulerDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     func finaleRuleAction() {
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:
@@ -251,7 +251,7 @@ class RulesTableViewController: SFTableViewController,AddEditRulerDelegate {
         }
         tableView.reloadData()
     }
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
             
             //saveProxys()

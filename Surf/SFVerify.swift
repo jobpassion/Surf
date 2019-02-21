@@ -244,8 +244,11 @@ extension SFTableViewController {
                 return alertWithTitle("Purchase failed", message: "Could not connect to the network")
             case .cloudServiceRevoked: // user has revoked permission to use this cloud service
                 return alertWithTitle("Purchase failed", message: "Cloud service was revoked")
+            default:
+                break
             }
         }
+        return alertWithTitle("default", message: "default")
     }
     
     

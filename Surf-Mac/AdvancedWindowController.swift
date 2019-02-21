@@ -38,7 +38,7 @@ class AdvancedWindowController: NSWindowController {
         alert.addButton(withTitle: "OK")
         
         alert.messageText = msg
-        alert.icon = NSImage.init(named: NSImage.Name(rawValue: "AppIcon"))
+        alert.icon = NSImage.init(named: "AppIcon")
         alert.alertStyle = .warning
         alert.beginSheetModal(for: self.window!, completionHandler: { (r) in
             print(r)

@@ -34,7 +34,7 @@ class ImageViewController: UIViewController {
     }
     @objc func saveConfigToImage(_ sender: AnyObject){
         //&#xf3ac;
-        if let png = UIImagePNGRepresentation(image){
+        if let png = image.pngData(){
             let url = URL.init(fileURLWithPath: NSTemporaryDirectory()+"BarCode.png")
             try! png.write(to: url)
             let vc = UIActivityViewController(activityItems: [url], applicationActivities: [])

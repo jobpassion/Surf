@@ -55,7 +55,7 @@ open class SFTableViewController: UITableViewController {
     }
     
     func alertMessageAction(_ message:String,complete:(() -> Void)?) {
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:
@@ -81,7 +81,7 @@ open class SFTableViewController: UITableViewController {
     }
     
     func alertMessageAction(_ message:String) {
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:

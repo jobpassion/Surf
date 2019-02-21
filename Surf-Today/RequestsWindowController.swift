@@ -126,11 +126,11 @@ class RequestsWindowController: NSWindowController,NSTableViewDelegate,NSTableVi
         if (tableColumn?.identifier)!.rawValue == "Icon" {
             switch result.rule.policy{
             case .Direct:
-                return  NSImage(named:NSImage.Name(rawValue: "NSStatusPartiallyAvailable"))
+                return  NSImage(named:"NSStatusPartiallyAvailable")
             case .Proxy:
-                return NSImage(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+                return NSImage(named:"NSStatusAvailable")
             case .Reject:
-                return NSImage(named:NSImage.Name(rawValue: "NSStatusUnavailable"))
+                return NSImage(named:"NSStatusUnavailable")
             default:
                 break
             }
@@ -214,11 +214,11 @@ class RequestsWindowController: NSWindowController,NSTableViewDelegate,NSTableVi
         }else if iden == "Icon" {
             switch result.rule.policy{
             case .Direct:
-                cell.imageView?.objectValue = NSImage(named:NSImage.Name(rawValue: "NSStatusPartiallyAvailable"))
+                cell.imageView?.objectValue = NSImage(named:"NSStatusPartiallyAvailable")
             case .Proxy:
-                cell.imageView?.objectValue = NSImage(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+                cell.imageView?.objectValue = NSImage(named:"NSStatusAvailable")
             case .Reject:
-                cell.imageView?.objectValue = NSImage(named:NSImage.Name(rawValue: "NSStatusUnavailable"))
+                cell.imageView?.objectValue = NSImage(named:"NSStatusUnavailable")
             default:
                 break
             }
@@ -242,7 +242,7 @@ class RequestsWindowController: NSWindowController,NSTableViewDelegate,NSTableVi
                         let x = "NONE"
                         let s = NSMutableAttributedString(string:x )
                         let r = NSMakeRange(0, 4);
-                        s.addAttributes([NSAttributedStringKey.foregroundColor:NSColor.red,NSAttributedStringKey.backgroundColor:NSColor.white], range: r)
+                        s.addAttributes([NSAttributedString.Key.foregroundColor:NSColor.red,NSAttributedString.Key.backgroundColor:NSColor.white], range: r)
                         cell.textField?.attributedStringValue = s
                     }
                     

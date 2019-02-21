@@ -122,7 +122,7 @@ class RequestDetailViewController: SFTableViewController {
     }
     @objc func shareRequestAction(_ sender:AnyObject){
         
-        var style:UIAlertControllerStyle = .actionSheet
+        var style:UIAlertController.Style = .actionSheet
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:

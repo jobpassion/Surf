@@ -375,7 +375,7 @@ class PreferencesWindowController: NSWindowController
             return title
         } else if tableColumn?.identifier.rawValue == "status" {
             if isActive {
-                return NSImage(named: NSImage.Name(rawValue: "NSMenuOnStateTemplate"))
+                return NSImage(named: "NSMenuOnStateTemplate")
             } else {
                 return nil
             }
@@ -489,7 +489,7 @@ class PreferencesWindowController: NSWindowController
         shakePath.closeSubpath()
         shakeAnimation.path = shakePath
         shakeAnimation.duration = CFTimeInterval(durationOfShake)
-        window?.animations = [NSAnimatablePropertyKey.init("frameOrigin"):shakeAnimation]
+        window?.animations = ["frameOrigin":shakeAnimation]
         window?.animator().setFrameOrigin(window!.frame.origin)
     }
 }

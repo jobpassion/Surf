@@ -110,9 +110,6 @@
 		69421BE21C4CE6B100021649 /* iTunesFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69421BE11C4CE6B100021649 /* iTunesFileTableViewController.swift */; };
 		694397B41E5C10B10009AD0E /* SFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694397B31E5C10B10009AD0E /* SFNavigationController.swift */; };
 		694397B61E5C16470009AD0E /* SFTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694397B51E5C16470009AD0E /* SFTableViewCell.swift */; };
-		694397B91E5C37FE0009AD0E /* GRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694397B71E5C37FE0009AD0E /* GRDB.framework */; };
-		694397BA1E5C38170009AD0E /* GRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694397B71E5C37FE0009AD0E /* GRDB.framework */; };
-		694397BB1E5C38170009AD0E /* GRDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 694397B71E5C37FE0009AD0E /* GRDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		694492311C568E4F00DD75CA /* RulesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694492301C568E4F00DD75CA /* RulesTableViewController.swift */; };
 		694536B91C730DFE00C4595D /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694536B81C730DFE00C4595D /* PolicyViewController.swift */; };
 		6946FAF21CB6330C00A8586E /* .adblock in Resources */ = {isa = PBXBuildFile; fileRef = 6946FAF11CB6330C00A8586E /* .adblock */; };
@@ -389,7 +386,6 @@
 				69DA26C22007AC820044FA53 /* XFoundation.framework in Embed Frameworks */,
 				69DA26C82007AD2F0044FA53 /* Reachability.framework in Embed Frameworks */,
 				69BCD77B1EE1CA7700A8A19C /* AxLogger.framework in Embed Frameworks */,
-				694397BB1E5C38170009AD0E /* GRDB.framework in Embed Frameworks */,
 				69784D5F1DE0A81A007E32C2 /* SwiftyJSON.framework in Embed Frameworks */,
 				69263EF31EE504BA005F0C76 /* snappy.framework in Embed Frameworks */,
 				69784D5C1DE0A811007E32C2 /* MMDB.framework in Embed Frameworks */,
@@ -733,7 +729,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				69F0E259217764D2005E44CB /* Fabric.framework in Frameworks */,
-				694397BA1E5C38170009AD0E /* GRDB.framework in Frameworks */,
 				69784D521DE0A467007E32C2 /* SwiftyJSON.framework in Frameworks */,
 				69DA26B62007AC0F0044FA53 /* XSocket.framework in Frameworks */,
 				69DA26AE2007ABFB0044FA53 /* XRuler.framework in Frameworks */,
@@ -758,7 +753,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				694397B91E5C37FE0009AD0E /* GRDB.framework in Frameworks */,
 				69784D641DE0A8DE007E32C2 /* Alamofire.framework in Frameworks */,
 				69784D651DE0A8DE007E32C2 /* AxLogger.framework in Frameworks */,
 				69784D661DE0A8DE007E32C2 /* CocoaAsyncSocket.framework in Frameworks */,
@@ -1383,7 +1377,7 @@
 					578ED9281C03181200913B2F = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 745WQDK4L7;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -1403,7 +1397,7 @@
 					692D8CF61C6A250400C07B3A = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 745WQDK4L7;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -1414,7 +1408,7 @@
 					69366E551BFECBE700AE123D = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 745WQDK4L7;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -1443,13 +1437,13 @@
 					696573EB1DE4959B00D95D59 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 745WQDK4L7;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 					};
 					69C4EE281C2919010020FBF8 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 745WQDK4L7;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -1466,7 +1460,7 @@
 					69C4EE3B1C29193D0020FBF8 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 745WQDK4L7;
-						LastSwiftMigration = 0910;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
@@ -1959,8 +1953,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TIMER";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/";
 				SWIFT_OBJC_BRIDGING_HEADER = "PacketTunnel/iOS/PacketTunnel-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Debug;
@@ -2002,8 +1995,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TIMER;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/";
 				SWIFT_OBJC_BRIDGING_HEADER = "PacketTunnel/iOS/PacketTunnel-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Release;
@@ -2033,8 +2025,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SurfToday-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -2062,8 +2053,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = t4_store;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "SurfToday-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -2210,8 +2200,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = surf4;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/";
 				SWIFT_OBJC_BRIDGING_HEADER = "Surf/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7s armv7";
 			};
@@ -2250,8 +2239,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = sf4_store;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/";
 				SWIFT_OBJC_BRIDGING_HEADER = "Surf/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALID_ARCHS = "arm64 armv7s armv7";
 			};
@@ -2282,8 +2270,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -2311,8 +2298,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = SurfTodayXX;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -2339,8 +2325,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = mac6;
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -2367,8 +2352,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = mac6_store;
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -2409,8 +2393,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "PacketTunnel/Mac/$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -2449,8 +2432,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "PacketTunnel/Mac/$(SWIFT_MODULE_NAME)-Swift.h";
 				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited)";
 			};
 			name = Release;

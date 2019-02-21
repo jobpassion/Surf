@@ -113,7 +113,7 @@ class ConfigTableViewController: SFTableViewController,LoglevelDelegate ,AddEdit
         self.tableView.reloadData()
     }
     @objc func backAction(_ sender:AnyObject){
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:
@@ -366,7 +366,7 @@ class ConfigTableViewController: SFTableViewController,LoglevelDelegate ,AddEdit
 //        }
         return false
     }
-    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
        
 //        if indexPath.section == 2  {
 //            if let c = config {
@@ -378,7 +378,7 @@ class ConfigTableViewController: SFTableViewController,LoglevelDelegate ,AddEdit
 //        }
         return .none
     }
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete{
             if indexPath.section == 2  {
@@ -450,7 +450,7 @@ class ConfigTableViewController: SFTableViewController,LoglevelDelegate ,AddEdit
     }
     
     func duplicate(){
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:

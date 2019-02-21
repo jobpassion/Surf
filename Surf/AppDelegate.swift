@@ -204,8 +204,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationBar.appearance().barTintColor = color
             UINavigationBar.appearance().tintColor = UIColor.white
             UINavigationBar.appearance().isTranslucent = false
-            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white,
-                                                                NSAttributedStringKey.font:UIFont.systemFont(ofSize: 21.0)
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,
+                                                                NSAttributedString.Key.font:UIFont.systemFont(ofSize: 21.0)
             ]
             UITableViewCell.appearance().backgroundColor = UIColor.init(red: 0x26/255.0, green: 0x28/255.0, blue: 0x32/255.0, alpha: 1.0)
             
@@ -222,8 +222,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UILabel.appearance(whenContainedInInstancesOf: [UITableViewCell.self]).backgroundColor =  UIColor.clear
            // UILabel.appearance().backgroundColor = UIColor.clear
            // UITableViewCell.appearance().textLabel?.backgroundColor = UIColor.clear
-            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:UIColor.gray], for: .normal)
-            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:color4], for: .selected)
+            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.gray], for: .normal)
+            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:color4], for: .selected)
             let color3 = UIColor.init(red: 0x26/255.0, green: 0x28/255.0, blue: 0x32/255.0, alpha: 1.0)
             
             UITableView.appearance().backgroundColor = color3
@@ -243,8 +243,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UINavigationBar.appearance().barTintColor = color
             UINavigationBar.appearance().tintColor = UIColor.white
             UINavigationBar.appearance().isTranslucent = false
-            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white,
-                                                                NSAttributedStringKey.font:UIFont.systemFont(ofSize: 21.0)
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white,
+                                                                NSAttributedString.Key.font:UIFont.systemFont(ofSize: 21.0)
             ]
            
             UITableView.appearance().backgroundColor = UIColor.groupTableViewBackground
@@ -262,8 +262,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             } else {
                 // Fallback on earlier versions
             }
-            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:UIColor.gray], for: .normal)
-            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor:color4], for: .selected)
+            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.gray], for: .normal)
+            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:color4], for: .selected)
             let color3 = UIColor.init(red: 0x26/255.0, green: 0x28/255.0, blue: 0x32/255.0, alpha: 1.0)
             
             
@@ -370,7 +370,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
     }
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool{
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool{
         
     
         verify()

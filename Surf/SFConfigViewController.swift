@@ -189,7 +189,7 @@ class SFConfigListViewController : SFTableViewController ,ConfigTableViewControl
         
         //self.tableView.allowsSelectionDuringEditing = true
         self.tableView.allowsMultipleSelectionDuringEditing = false
-        tableView.separatorInset=UIEdgeInsetsMake(0,50, 0, 0);
+        tableView.separatorInset=UIEdgeInsets.init(top: 0,left: 50, bottom: 0, right: 0);
         //navigationItem.rightBarButtonItem = editButtonItem()
         tableView.delegate = self
         
@@ -232,7 +232,7 @@ class SFConfigListViewController : SFTableViewController ,ConfigTableViewControl
             changeToBuyPage()
         }
         
-        var style:UIAlertControllerStyle = .actionSheet
+        var style:UIAlertController.Style = .actionSheet
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:
@@ -393,13 +393,13 @@ class SFConfigListViewController : SFTableViewController ,ConfigTableViewControl
                     cell.textLabel?.text =  "Load cell error"
                     
                     cell.updateStandUI()
-                    cell.accessoryType = UITableViewCellAccessoryType.detailButton
+                    cell.accessoryType = UITableViewCell.AccessoryType.detailButton
                     
                     
                     return cell
                 }
                 let proxyCell = itemCell as! CountryCustomProxyCell
-                proxyCell.accessoryType = UITableViewCellAccessoryType.detailButton
+                proxyCell.accessoryType = UITableViewCell.AccessoryType.detailButton
                 let count  = SFConfigManager.manager.configCount
                 proxyCell.wwdcStyle()
                
@@ -455,7 +455,7 @@ class SFConfigListViewController : SFTableViewController ,ConfigTableViewControl
                     guard let addItemCell = tableView.dequeueReusableCell(withIdentifier: "add-item") else{
                         let cell = UITableViewCell(style: .default, reuseIdentifier: "add-item")
                         cell.textLabel?.text = desc
-                        cell.accessoryType = UITableViewCellAccessoryType.detailButton
+                        cell.accessoryType = UITableViewCell.AccessoryType.detailButton
                         return cell
                     }
                     let c = addItemCell as! ActionsCell
@@ -505,7 +505,7 @@ class SFConfigListViewController : SFTableViewController ,ConfigTableViewControl
         }
         
     }
-    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
     
         if indexPath.section ==  0 {
             return .delete
@@ -681,7 +681,7 @@ class SFConfigListViewController : SFTableViewController ,ConfigTableViewControl
     func activeBarCodeScan() {
         
         
-        var style:UIAlertControllerStyle = .actionSheet
+        var style:UIAlertController.Style = .actionSheet
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:
@@ -706,7 +706,7 @@ class SFConfigListViewController : SFTableViewController ,ConfigTableViewControl
         
     }
     func inputURL(){
-        var style:UIAlertControllerStyle = .alert
+        var style:UIAlertController.Style = .alert
         let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
         switch deviceIdiom {
         case .pad:
@@ -777,7 +777,7 @@ class SFConfigListViewController : SFTableViewController ,ConfigTableViewControl
       
         
     }
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete{
             
@@ -961,7 +961,7 @@ class ActionsCell :UITableViewCell{
         super.setSelected(selected, animated: animated)
         
     }
-    override func willTransition(to s: UITableViewCellStateMask) {
+    override func willTransition(to s: UITableViewCell.StateMask) {
         super.willTransition(to: s)
         //self.state = s;
     }

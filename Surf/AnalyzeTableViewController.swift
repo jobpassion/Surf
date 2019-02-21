@@ -20,14 +20,14 @@ extension SFVPNStatistics{
         let txt = "\u{f35a}\t\(self.runing)" + " Memory: " + self.memoryString()
         let s = NSMutableAttributedString(string:txt)
         let f = UIFont.init(name: "Ionicons", size: 20)!
-        s.addAttributes([NSAttributedStringKey.font:f], range: NSMakeRange(0, 1))
+        s.addAttributes([NSAttributedString.Key.font:f], range: NSMakeRange(0, 1))
         return s
     }
     func speed() ->NSAttributedString{
         let text = "Speed: \(self.lastTraffice.report())"
         let s = NSMutableAttributedString(string:text)
         let f = UIFont.init(name: "Ionicons", size: 20)!
-        s.addAttributes([NSAttributedStringKey.font:f], range: NSMakeRange(0, 1))
+        s.addAttributes([NSAttributedString.Key.font:f], range: NSMakeRange(0, 1))
         return s
 
         
@@ -36,7 +36,7 @@ extension SFVPNStatistics{
          let text = "Max Speed: \(self.maxTraffice.report())"
         let s = NSMutableAttributedString(string:text)
         let f = UIFont.init(name: "Ionicons", size: 20)!
-        s.addAttributes([NSAttributedStringKey.font:f], range: NSMakeRange(0, 1))
+        s.addAttributes([NSAttributedString.Key.font:f], range: NSMakeRange(0, 1))
         return s
 
     }
@@ -44,7 +44,7 @@ extension SFVPNStatistics{
         let text = "Total: \(self.totalTraffice.reportTraffic())"
         let s = NSMutableAttributedString(string:text)
         let f = UIFont.init(name: "Ionicons", size: 20)!
-        s.addAttributes([NSAttributedStringKey.font:f], range: NSMakeRange(0, 1))
+        s.addAttributes([NSAttributedString.Key.font:f], range: NSMakeRange(0, 1))
         return s
 
     }
@@ -52,7 +52,7 @@ extension SFVPNStatistics{
         let text = "\u{f25c} \(self.wifiTraffice.reportTraffic())"
         let s = NSMutableAttributedString(string:text)
         let f = UIFont.init(name: "Ionicons", size: 20)!
-        s.addAttributes([NSAttributedStringKey.font:f], range: NSMakeRange(0, 1))
+        s.addAttributes([NSAttributedString.Key.font:f], range: NSMakeRange(0, 1))
         return s
 
         
@@ -62,7 +62,7 @@ extension SFVPNStatistics{
         let text = "PROXY: \(self.proxyTraffice.reportTraffic())"
         let s = NSMutableAttributedString(string:text)
         let f = UIFont.init(name: "Ionicons", size: 20)!
-        s.addAttributes([NSAttributedStringKey.font:f], range: NSMakeRange(0, 1))
+        s.addAttributes([NSAttributedString.Key.font:f], range: NSMakeRange(0, 1))
         return s
 
     }
@@ -71,7 +71,7 @@ extension SFVPNStatistics{
         let text = "CELL: \(self.cellTraffice.reportTraffic())"
         let s = NSMutableAttributedString(string:text)
         let f = UIFont.init(name: "Ionicons", size: 20)!
-        s.addAttributes([NSAttributedStringKey.font:f], range: NSMakeRange(0, 1))
+        s.addAttributes([NSAttributedString.Key.font:f], range: NSMakeRange(0, 1))
         return s
 
     }

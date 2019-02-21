@@ -217,9 +217,9 @@ class ProxyGroupViewController: SFTableViewController,BarcodeScanDelegate,AddEdi
         self.tableView.refreshControl = UIRefreshControl()
         self.tableView.refreshControl?.backgroundColor = UIColor.gray
         self.tableView.refreshControl?.tintColor = UIColor.white
-        self.tableView.separatorInset = UIEdgeInsetsMake(0,50, 0, 0);
+        self.tableView.separatorInset = UIEdgeInsets.init(top: 0,left: 50, bottom: 0, right: 0);
         self.tableView.refreshControl?.addTarget(self, action: #selector(self.downloadProxy)
-            , for: UIControlEvents.valueChanged)
+            , for: UIControl.Event.valueChanged)
         //self.testInapp()
         if let p = ProxyGroupSettings.share.receipt {
             print(p)
@@ -850,7 +850,7 @@ class ProxyGroupViewController: SFTableViewController,BarcodeScanDelegate,AddEdi
         
     }
  
-    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
     
         if indexPath.section != 0{
             if ProxyGroupSettings.share.proxys.count == 0 {
@@ -1036,7 +1036,7 @@ class ProxyGroupViewController: SFTableViewController,BarcodeScanDelegate,AddEdi
     }
     
     // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
             // Delete the row from the data source

@@ -19,7 +19,7 @@ import XRuler
 @available(OSX 10.12.2, *)
 fileprivate extension NSTouchBar.CustomizationIdentifier {
     
-    static let touchBar = NSTouchBar.CustomizationIdentifier("com.ToolbarSample.touchBar")
+    static let touchBar = "com.ToolbarSample.touchBar"
 }
 
 @available(OSX 10.12.2, *)
@@ -57,7 +57,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
     var qr = QrController()
     
     func initMenuBar() {
-        let icon = NSImage(named: NSImage.Name(rawValue: "GrayDot"))
+        let icon = NSImage(named: "GrayDot")
         icon?.isTemplate = true
         barItem = NSStatusBar.system.statusItem(withLength: -1)
         barItem.view = self.statusView
@@ -194,7 +194,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
         
         switch status{
         case .disconnected:
-            statusView.iconView.image =  NSImage(named:NSImage.Name(rawValue: "NSStatusPartiallyAvailable"))
+            statusView.iconView.image =  NSImage(named:"NSStatusPartiallyAvailable")
             if let item = barItem.menu!.items.first{
                 item.title = "Connect"
             }
@@ -202,7 +202,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
                 btn.title = "Connect"
             }
         case .invalid:
-            statusView.iconView.image = NSImage(named: NSImage.Name(rawValue: "NSStatusUnavailable"))
+            statusView.iconView.image = NSImage(named: "NSStatusUnavailable")
             SSLog("Invalid")
             if let item = barItem.menu!.items.first{
                 item.title = "Invalid"
@@ -211,7 +211,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
                 btn.title = "Invalid"
             }
         case .connected:
-            statusView.iconView.image = NSImage(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            statusView.iconView.image = NSImage(named:"NSStatusAvailable")
             SSLog("Connected")
             if let item = barItem.menu!.items.first{
                 item.title = "Disconnect"
@@ -220,7 +220,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
                 btn.title = "Disconnect"
             }
         case .connecting:
-            statusView.iconView.image = NSImage(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            statusView.iconView.image = NSImage(named:"NSStatusAvailable")
             SSLog("Connecting")
             if let item = barItem.menu!.items.first{
                 item.title = "Connecting"
@@ -229,7 +229,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
                 btn.title = "Connecting"
             }
         case .disconnecting:
-            statusView.iconView.image = NSImage(named:NSImage.Name(rawValue: "NSStatusAvailable"))
+            statusView.iconView.image = NSImage(named:"NSStatusAvailable")
             
             if let item = barItem.menu!.items.first{
                 item.title = "Disconnecting"
@@ -238,7 +238,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
                 btn.title = "Disconnecting"
             }
         case .reasserting:
-            statusView.iconView.image = NSImage.init(named:NSImage.Name(rawValue: "NSStatusPartiallyAvailable"))
+            statusView.iconView.image = NSImage.init(named:"NSStatusPartiallyAvailable")
             
             if let item = barItem.menu!.items.first{
                 item.title = "Reasserting"
@@ -269,7 +269,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
         return item
     }
     @objc func openProxySConfig(_ sender: AnyObject) {
-        configWindow = PreferencesWindowController(windowNibName: NSNib.Name(rawValue: "PreferencesWindowController"))
+        configWindow = PreferencesWindowController(windowNibName: "PreferencesWindowController")
         // preferencesWinCtrl = ctrl
         
         //let config = NSStoryboard.init(name: "Config", bundle: nil)
@@ -337,7 +337,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
     }
     @objc func openRequest(_ sender:AnyObject) {
         if requestWindow == nil {
-            requestWindow = RequestsWindowController(windowNibName: NSNib.Name(rawValue: "RequestsWindowController"))
+            requestWindow = RequestsWindowController(windowNibName: "RequestsWindowController")
         }
         
         requestWindow?.showWindow(self)
@@ -371,7 +371,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
     }
     @objc func advancedOpen(_ sender: AnyObject){
         if advancedWindos == nil {
-            advancedWindos = AdvancedWindowController(windowNibName: NSNib.Name(rawValue: "AdvancedWindowController"))
+            advancedWindos = AdvancedWindowController(windowNibName: "AdvancedWindowController")
         }
         
         advancedWindos?.showWindow(self)
@@ -385,7 +385,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
             return
         }
         if qrWindow == nil {
-            qrWindow = QrWindowController(windowNibName: NSNib.Name(rawValue: "QRCodeWindow"))
+            qrWindow = QrWindowController(windowNibName: "QRCodeWindow")
         }
         let idx = ProxyGroupSettings.share.selectIndex
         qrWindow?.proxy = ProxyGroupSettings.share.proxys[idx]
