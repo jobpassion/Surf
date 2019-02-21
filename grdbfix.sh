@@ -3,7 +3,7 @@
 # Config
 
 export GRDB_DIR="/tmp/GRDB_project_name_temp"
-export GRDB_REF="development"   # commit/branch/etc. you want to use
+export GRDB_REF="Swift-5.0"   # commit/branch/etc. you want to use
 
 export SQLITELIB_XCCONFIG='
 CUSTOM_SQLLIBRARY_CFLAGS = -DSQLITE_ENABLE_FTS5 -DSQLITE_ENABLE_PREUPDATE_HOOK -DSQLITE_ENABLE_JSON1
