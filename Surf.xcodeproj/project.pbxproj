@@ -106,6 +106,8 @@
 		693B744C1ED9FA69004C6E87 /* SFSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 693B74491ED9FA69004C6E87 /* SFSocket.framework */; };
 		693DBDFF1C96977A0067595C /* SFCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DBDFE1C96977A0067595C /* SFCountry.swift */; };
 		693DBE021C969C610067595C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 693DBE011C969C610067595C /* data.json */; };
+		694181D7222E3EB500DD579C /* GRDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 694397B71E5C37FE0009AD0E /* GRDB.framework */; };
+		694181D8222E3EB500DD579C /* GRDB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 694397B71E5C37FE0009AD0E /* GRDB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69421BE01C4CD90300021649 /* ConfigTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69421BDF1C4CD90300021649 /* ConfigTableViewController.swift */; };
 		69421BE21C4CE6B100021649 /* iTunesFileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69421BE11C4CE6B100021649 /* iTunesFileTableViewController.swift */; };
 		694397B41E5C10B10009AD0E /* SFNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694397B31E5C10B10009AD0E /* SFNavigationController.swift */; };
@@ -378,6 +380,7 @@
 				69784D591DE0A80A007E32C2 /* DarwinCore.framework in Embed Frameworks */,
 				69784D5E1DE0A818007E32C2 /* Sodium.framework in Embed Frameworks */,
 				69DA26C32007AC840044FA53 /* XSocket.framework in Embed Frameworks */,
+				694181D8222E3EB500DD579C /* GRDB.framework in Embed Frameworks */,
 				69BCD7791EE1CA5300A8A19C /* SystemKit.framework in Embed Frameworks */,
 				69DA26C12007AC800044FA53 /* XProxy.framework in Embed Frameworks */,
 				69E049B121E60320000FC13E /* KCP.framework in Embed Frameworks */,
@@ -733,6 +736,7 @@
 				69DA26B62007AC0F0044FA53 /* XSocket.framework in Frameworks */,
 				69DA26AE2007ABFB0044FA53 /* XRuler.framework in Frameworks */,
 				69F0E257217764C1005E44CB /* Crashlytics.framework in Frameworks */,
+				694181D7222E3EB500DD579C /* GRDB.framework in Frameworks */,
 				69784D4F1DE0A467007E32C2 /* MMDB.framework in Frameworks */,
 				69784D511DE0A467007E32C2 /* Sodium.framework in Frameworks */,
 				69BCD77F1EE469FB00A8A19C /* ObjectMapper.framework in Frameworks */,
@@ -1478,6 +1482,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 				"zh-Hans",
@@ -2185,6 +2190,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2224,6 +2230,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2313,7 +2320,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 745WQDK4L7;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Surf-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -2340,7 +2350,10 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 745WQDK4L7;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Surf-Mac/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
