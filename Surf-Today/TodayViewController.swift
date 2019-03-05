@@ -152,6 +152,9 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             timeField.isHidden = true
            titleField.stringValue = "NSStatusPartiallyAvailable"
             
+        @unknown default:
+            titleField.stringValue = "Unknown"
+            timeField.isHidden = true
         }
         
         

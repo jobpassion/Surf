@@ -280,7 +280,7 @@ class AnalyzeTableViewController: SFTableViewController {
     
         tableView.deselectRow(at: indexPath, animated: true)
         var iden:String
-        var show:Bool = false
+
         switch indexPath.section {
         case 1:
             if indexPath.row == 0 {
@@ -288,16 +288,14 @@ class AnalyzeTableViewController: SFTableViewController {
             }else {
                 iden = "showResult"
             }
-//        case 1:
-//            iden = "showStat"
        case 0:
             iden = "showRouter"
-            show = true
+            
         default:
-            show = true
+           
             iden = "showLog"
         }
-        show = true
+        
         
         
         

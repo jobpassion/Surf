@@ -246,6 +246,12 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
             if let btn = connectionButton {
                 btn.title = "Reasserting"
             }
+        @unknown default:
+            if let item = barItem.menu!.items.first{
+                item.title = "Status Unkwon"
+            }
+          
+            
         }
         
         

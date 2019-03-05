@@ -139,6 +139,8 @@ class MainViewController: NSViewController {
         case .reasserting:
             statusView.image = NSImage.init(named:"RedDot")
             SSLog("Reasserting")
+        @unknown default:
+            statusView.image = NSImage.init(named:"RedDot")
         }
         
         

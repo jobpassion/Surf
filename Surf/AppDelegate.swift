@@ -252,7 +252,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             UITableViewCell.appearance().backgroundColor = UIColor.white
             
-            let color2 = UIColor.init(red: 0x1/255.0, green: 0x2d/255.0, blue: 0x36/255.0, alpha: 1.0)
+            _ = UIColor.init(red: 0x1/255.0, green: 0x2d/255.0, blue: 0x36/255.0, alpha: 1.0)
             UITabBar.appearance().barTintColor = nil
             
             let color4 = UIColor.init(red: 0x91/255.0, green: 0xAC/255.0, blue: 0xF3/255.0, alpha: 1.0)
@@ -264,7 +264,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.gray], for: .normal)
             UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:color4], for: .selected)
-            let color3 = UIColor.init(red: 0x26/255.0, green: 0x28/255.0, blue: 0x32/255.0, alpha: 1.0)
+            _ = UIColor.init(red: 0x26/255.0, green: 0x28/255.0, blue: 0x32/255.0, alpha: 1.0)
             
             
             

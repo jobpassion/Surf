@@ -70,6 +70,8 @@ class StatCell: NSTableCellView {
             
             textField?.stringValue = "Reasserting"
             
+        @unknown default:
+            break
         }
         
         

@@ -1153,7 +1153,10 @@ class ProxyGroupViewController: SFTableViewController,BarcodeScanDelegate,AddEdi
                     stat = false
                    
                     
-                }
+                @unknown default:
+                    status = "UnKnown"
+                    stat = false
+            }
                 
             
         }else {

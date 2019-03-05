@@ -87,6 +87,8 @@ public class BarcodeScanViewController: UIViewController,AVCaptureMetadataOutput
                     print("Not granted access to \(cameraMediaType)")
                 }
             }
+        @unknown default:
+            alertMessageAction(message: "Unknow Error", complete: nil)
         }
 
     }
