@@ -952,7 +952,7 @@ extension AppDelegate {
             let  newTokenData:NSData = NSKeyedArchiver.archivedData(withRootObject: currentiCloudToken) as NSData
             print("token \(newTokenData)")
             UserDefaults.standard.set(newTokenData, forKey: "com.yarshure.surf.UbiquityIdentityToken")
-            let iCloudToken = NSKeyedArchiver.archivedData(withRootObject: currentiCloudToken)
+            _ = NSKeyedArchiver.archivedData(withRootObject: currentiCloudToken)
             //setObject: newTokenData
             //forKey: @"com.apple.MyAppName.UbiquityIdentityToken"];
         }else {
@@ -962,7 +962,7 @@ extension AppDelegate {
         NotificationCenter.default.addObserver(forName: NSNotification.Name.NSUbiquityIdentityDidChange, object: nil, queue: OperationQueue.main) { (noti:Notification) in
             print("NSUbiquityIdentityDidChangeNotification")
         }
-        let iCloudEnable = UserDefaults.standard.bool(forKey: "iCloudEnable")
+        _  = UserDefaults.standard.bool(forKey: "iCloudEnable")
         if ProxyGroupSettings.share.iCloudSyncEnabled(){
             sync()
         }
