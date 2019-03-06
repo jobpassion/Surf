@@ -437,7 +437,6 @@
 		6920758C1CE77C29000F1ED9 /* HostEditTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostEditTableViewController.swift; sourceTree = "<group>"; };
 		69263EEB1EE50491005F0C76 /* snappy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = snappy.framework; path = Carthage/Build/Mac/snappy.framework; sourceTree = "<group>"; };
 		69263EF81EE50C5B005F0C76 /* SFSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFSocket.framework; path = Carthage/Build/Mac/SFSocket.framework; sourceTree = "<group>"; };
-		6927ADA51DE0B6010027EF7A /* PacketTunnel_Mac-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PacketTunnel_Mac-Swift.h"; path = "Mac/PacketTunnel_Mac-Swift.h"; sourceTree = "<group>"; };
 		69290F8320302F9500780915 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		6929C32F1F32EBCB007C1FA3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6929C3301F32FCE0007C1FA3 /* IoniconsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IoniconsSwift.framework; path = Carthage/Build/iOS/IoniconsSwift.framework; sourceTree = "<group>"; };
@@ -488,14 +487,12 @@
 		694536B81C730DFE00C4595D /* PolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
 		6946FAF11CB6330C00A8586E /* .adblock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = .adblock; path = iOS/.adblock; sourceTree = "<group>"; };
 		6947D7711CE4CE5E0020BBCB /* Surf-Mac.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Surf-Mac.xcconfig"; sourceTree = "<group>"; };
-		6947D7731CE4D0050020BBCB /* A_BIG_T-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "A_BIG_T-Bridging-Header.h"; sourceTree = "<group>"; };
 		6948C96E1C59C3B50057774A /* Surf-iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Surf-iOS.xcconfig"; sourceTree = "<group>"; };
 		69524B041D2E091C00FA4DC7 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6952BAE81DF92F9D00DAD397 /* QrWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrWindowController.swift; sourceTree = "<group>"; };
 		6952BAF01DF9529700DAD397 /* QrController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrController.swift; sourceTree = "<group>"; };
 		6957A2D41F04D27700B54B90 /* ChartsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		695987951C15894C003E1DDC /* LogFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogFileViewController.swift; sourceTree = "<group>"; };
-		6959879A1C159480003E1DDC /* Surf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Surf-Bridging-Header.h"; sourceTree = "<group>"; };
 		695BBDD81C64823900879ABB /* SFVPNManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVPNManager.swift; sourceTree = "<group>"; };
 		695EA9AD1E81069000D594CC /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		69639BC61EE1636700893D18 /* DarwinCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DarwinCore.framework; path = Carthage/Build/iOS/DarwinCore.framework; sourceTree = "<group>"; };
@@ -573,8 +570,6 @@
 		698BFE201C3A205A00CED9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Mac/Info.plist; sourceTree = "<group>"; };
 		698BFE211C3A206300CED9EC /* PacketTunnel_Mac.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = PacketTunnel_Mac.entitlements; path = Mac/PacketTunnel_Mac.entitlements; sourceTree = "<group>"; };
 		698BFE251C3A20FC00CED9EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOS/Info.plist; sourceTree = "<group>"; };
-		698BFE261C3A20FC00CED9EC /* PacketTunnel-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PacketTunnel-Bridging-Header.h"; path = "iOS/PacketTunnel-Bridging-Header.h"; sourceTree = "<group>"; };
-		698BFE271C3A20FC00CED9EC /* PacketTunnel-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "PacketTunnel-Swift.h"; path = "iOS/PacketTunnel-Swift.h"; sourceTree = "<group>"; };
 		698BFE281C3A20FC00CED9EC /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = PacketTunnel.entitlements; path = iOS/PacketTunnel.entitlements; sourceTree = "<group>"; };
 		698BFE291C3A218000CED9EC /* PacketTunnel-Mac.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "PacketTunnel-Mac.xcconfig"; sourceTree = "<group>"; };
 		69961CA82043B780002E541C /* AlternateIcon76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlternateIcon76x76@2x.png"; sourceTree = "<group>"; };
@@ -899,7 +894,6 @@
 				69E136791C704708002BFBF2 /* analyze */,
 				695BBDD71C6481F500879ABB /* vpnmanage */,
 				696E73BC1C463F9500DF9A39 /* Surf.entitlements */,
-				6959879A1C159480003E1DDC /* Surf-Bridging-Header.h */,
 				698705811C0FFBE900783358 /* config */,
 				693B603E1C48867500173D0B /* const.swift */,
 				690C77C01CF42FF100EB1610 /* Default.conf */,
@@ -1148,7 +1142,6 @@
 			isa = PBXGroup;
 			children = (
 				693DBDFC1C9690F30067595C /* config.pac.js */,
-				6927ADA51DE0B6010027EF7A /* PacketTunnel_Mac-Swift.h */,
 				698BFE291C3A218000CED9EC /* PacketTunnel-Mac.xcconfig */,
 				692EF8FC1CABF05C00C9936A /* socks5.js */,
 				698BFE211C3A206300CED9EC /* PacketTunnel_Mac.entitlements */,
@@ -1161,8 +1154,6 @@
 			isa = PBXGroup;
 			children = (
 				698BFE251C3A20FC00CED9EC /* Info.plist */,
-				698BFE261C3A20FC00CED9EC /* PacketTunnel-Bridging-Header.h */,
-				698BFE271C3A20FC00CED9EC /* PacketTunnel-Swift.h */,
 				698BFE281C3A20FC00CED9EC /* PacketTunnel.entitlements */,
 				696E73AB1C44982400DF9A39 /* PacketTunnel-iOS.xcconfig */,
 				6946FAF11CB6330C00A8586E /* .adblock */,
@@ -1187,7 +1178,6 @@
 			children = (
 				69290F8320302F9500780915 /* icon.icns */,
 				6983C0E41DF4FED300100E70 /* Credits.rtf */,
-				6947D7731CE4D0050020BBCB /* A_BIG_T-Bridging-Header.h */,
 				69DA64C71C291E1B00DC174C /* Surf-Mac.entitlements */,
 				692C3E8420467C0500F0DA9A /* RequestsBasic.swift */,
 				69C4EE2B1C2919010020FBF8 /* AppDelegate.swift */,
