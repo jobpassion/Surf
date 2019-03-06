@@ -11,6 +11,7 @@ import NetworkExtension
 import SwiftyJSON
 import SFSocket
 import CoreTelephony
+import Crashlytics
 import Fabric
 import SystemKitiOS
 import IoniconsSwift

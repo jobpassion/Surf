@@ -16,6 +16,7 @@ import Fabric
 import Xcon
 import XRuler
 import IoniconsSwift
+import Crashlytics
 func version() ->Int{
     return 10
 }
@@ -1348,12 +1349,12 @@ class ProxyGroupViewController: SFTableViewController,BarcodeScanDelegate,AddEdi
                 Answers.logCustomEvent(withName: "Stop",
                                        customAttributes: [
                                         "Time Interval": exp,
-                                        
+
                     ])
             }else {
                 Answers.logCustomEvent(withName: "Start",
                                        customAttributes: [
-                                        
+
                                         "Time Interval": exp,
                     ])
 
