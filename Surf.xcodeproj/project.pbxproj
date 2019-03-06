@@ -467,10 +467,6 @@
 		6936B4D61C4D304C000EBF70 /* ISO_3166.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ISO_3166.txt; sourceTree = "<group>"; };
 		693766B91DFE8F7C0015C549 /* QRView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
 		693AAE1E200EDF1A009E481E /* RequestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsVC.swift; sourceTree = "<group>"; };
-		693AAE27200EDF82009E481E /* XDataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XDataService.h; sourceTree = "<group>"; };
-		693AAE28200EDF82009E481E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		693AAE37200EE255009E481E /* xdatamac.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = xdatamac.xcconfig; sourceTree = "<group>"; };
-		693AAE78200EED15009E481E /* RequestBasic.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestBasic.xib; sourceTree = "<group>"; };
 		693B603C1C479F2A00173D0B /* thanks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = thanks.txt; sourceTree = "<group>"; };
 		693B603E1C48867500173D0B /* const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = const.swift; sourceTree = "<group>"; };
 		693B74491ED9FA69004C6E87 /* SFSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFSocket.framework; path = Carthage/Build/iOS/SFSocket.framework; sourceTree = "<group>"; };
@@ -865,7 +861,6 @@
 				69C4EE2A1C2919010020FBF8 /* Surf-Mac */,
 				692D8CFB1C6A250400C07B3A /* SurfToday */,
 				696573EE1DE4959B00D95D59 /* Surf-Today */,
-				693AAE26200EDF82009E481E /* XDataService */,
 				692D8CF81C6A250400C07B3A /* Frameworks */,
 				69366E571BFECBE700AE123D /* Products */,
 			);
@@ -919,17 +914,6 @@
 				6975F1461F32D2F100F7674C /* InfoPlist.strings */,
 			);
 			path = Surf;
-			sourceTree = "<group>";
-		};
-		693AAE26200EDF82009E481E /* XDataService */ = {
-			isa = PBXGroup;
-			children = (
-				693AAE27200EDF82009E481E /* XDataService.h */,
-				693AAE28200EDF82009E481E /* Info.plist */,
-				693AAE37200EE255009E481E /* xdatamac.xcconfig */,
-				693AAE78200EED15009E481E /* RequestBasic.xib */,
-			);
-			path = XDataService;
 			sourceTree = "<group>";
 		};
 		693AAE74200EE991009E481E /* ios */ = {

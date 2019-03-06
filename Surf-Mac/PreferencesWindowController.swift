@@ -343,7 +343,7 @@ class PreferencesWindowController: NSWindowController
         var profile:SFProxy
         if (profileMgr.proxys.count == index) {
             profile = SFProxy.create(name: "server", type: .SS, address: "", port: "1080", passwd: "", method: "aes-256-cfb", tls: false)!
-            profileMgr.addProxy(profile)
+            _ = profileMgr.addProxy(profile)
         }else {
             profile = profileMgr.proxys[index]
         }
@@ -402,7 +402,7 @@ class PreferencesWindowController: NSWindowController
     func tableView(_ tableView: NSTableView, acceptDrop info: NSDraggingInfo
         , row: Int, dropOperation: NSTableView.DropOperation) -> Bool {
          let mgr = profileMgr
-            var oldIndexes = [Int]()
+        let oldIndexes = [Int]()
         //MARK ----
 //        info.enumerateDraggingItems(options: [], for: tableView, classes: [NSPasteboardItem.self], searchOptions: [:]) { in
 //                if let str = ($0.0.item as! NSPasteboardItem).string(forType: self.tableViewDragType), let index = Int(str) {
@@ -418,13 +418,13 @@ class PreferencesWindowController: NSWindowController
             tableView.beginUpdates()
             for oldIndex in oldIndexes {
                 if oldIndex < row {
-                    let o = mgr.removeProxy( oldIndex + oldIndexOffset, chain: false)
+                    _ = mgr.removeProxy( oldIndex + oldIndexOffset, chain: false)
                     //todo
                     //mgr.proxys.insert(o, at:row - 1)
                     tableView.moveRow(at: oldIndex + oldIndexOffset, to: row - 1)
                     oldIndexOffset -= 1
                 } else {
-                    let o = mgr.removeProxy( oldIndex,chain: false)
+                    _ = mgr.removeProxy( oldIndex,chain: false)
                     //mgr.proxys.insert(o, at:row + newIndexOffset)
                     tableView.moveRow(at: oldIndex, to: row + newIndexOffset)
                     newIndexOffset += 1

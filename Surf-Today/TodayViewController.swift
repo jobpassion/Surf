@@ -33,6 +33,7 @@ class TodayViewController: NSViewController, NCWidgetProviding {
             }
             
         } catch let error {
+            print(error)
             SFVPNManager.shared.xpc()
             
         }
