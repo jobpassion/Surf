@@ -121,13 +121,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if  let  currentiCloudToken = fm.ubiquityIdentityToken{
             let  newTokenData:NSData = NSKeyedArchiver.archivedData(withRootObject: currentiCloudToken) as NSData
             print("token \(newTokenData)")
-            UserDefaults.standard.set(newTokenData, forKey: "com.yarshure.surf.UbiquityIdentityToken")
+            UserDefaults.standard.set(newTokenData, forKey: "com.jeffery.surf.UbiquityIdentityToken")
             iCloudToken = NSKeyedArchiver.archivedData(withRootObject: currentiCloudToken)
             //setObject: newTokenData
             //forKey: @"com.apple.MyAppName.UbiquityIdentityToken"];
         }else {
             UserDefaults.standard
-                .removeObject(forKey: "com.yarshure.surf.UbiquityIdentityToken")
+                .removeObject(forKey: "com.jeffery.surf.UbiquityIdentityToken")
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name.NSUbiquityIdentityDidChange, object: nil, queue: OperationQueue.main) { (noti:Notification) in
             print("NSUbiquityIdentityDidChangeNotification")
@@ -364,7 +364,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SKit.xxIpAddr = "240.7.1.12"
         SKit.tunIP = "240.7.1.9"
         Xcon.debugEnable = true
-        XRuler.groupIdentifier = "group.com.yarshure.Surf"
+        XRuler.groupIdentifier = "group.com.jeffery.Surf"
         var url = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: XRuler.groupIdentifier)!
         url.appendPathComponent("abigt.conf")
 

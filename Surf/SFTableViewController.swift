@@ -26,7 +26,7 @@ enum RegisteredPurchase: String {
     case nonRenewingPurchase
 }
 open class SFTableViewController: UITableViewController {
-    let appBundleId = "com.yarshure.Surf"
+    let appBundleId = "com.jeffery.Surf"
   
     func dataForShare(filePath:URL?) ->Data? {
         guard let u = filePath else  {

@@ -112,7 +112,7 @@ class SFRuleHelper{
     
     func initDatabase(db:Connection) {
         let bId = Bundle.main.infoDictionary!["CFBundleIdentifier"] as! String
-        if bId == "com.yarshure.Surf"  {
+        if bId == "com.jeffery.Surf"  {
 //            let rules = Table("rules")
 //            
 

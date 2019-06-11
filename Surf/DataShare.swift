@@ -11,7 +11,7 @@ class  DataShare:NSObject{
     
     static  func configPath() ->String{
         
-        let urlContain = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.yarshure.Surf")
+        let urlContain = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.jeffery.Surf")
         let url = urlContain!.appendingPathComponent(".config")
          let u = url.path 
         return u

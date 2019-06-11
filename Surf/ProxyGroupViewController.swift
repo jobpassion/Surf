@@ -319,7 +319,7 @@ class ProxyGroupViewController: SFTableViewController,BarcodeScanDelegate,AddEdi
         
         if let re =  ProxyGroupSettings.share.receipt {
             for item in re.in_app {
-                if item.product_id == "com.yarshure.Surf.30D"{
+                if item.product_id == "com.jeffery.Surf.30D"{
                     let now = Date().timeIntervalSince1970
                     let x = Double(item.original_purchase_date_ms)!/1000 + 30 * 24*3600
                     let df = DateFormatter()

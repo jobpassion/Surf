@@ -1,4 +1,4 @@
-github "yarshure/SFSocket" "Swift5"
+github "jobpassion/SFSocket" "Swift5"
 github "Alamofire/Alamofire"
 github "bizz84/SwiftyStoreKit"
 github "danielgindi/Charts" "v3.0.5"

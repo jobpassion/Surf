@@ -627,7 +627,7 @@ class AppDelegate: NSResponder, NSApplicationDelegate,NSMenuDelegate ,NSTouchBar
     func applicationDidFinishLaunching(_ notification: Notification) {
         Fabric.with([Crashlytics.self])
         Fabric.with([Answers.self])
-        XRuler.groupIdentifier = "745WQDK4L7.com.yarshure.Surf"
+        XRuler.groupIdentifier = "745WQDK4L7.com.jeffery.Surf"
         UserDefaults.standard.set(true, forKey: "NSApplicationCrashOnExceptions")
         copyConfig()
         // testTouchBar()
@@ -951,13 +951,13 @@ extension AppDelegate {
         if  let  currentiCloudToken = fm.ubiquityIdentityToken{
             let  newTokenData:NSData = NSKeyedArchiver.archivedData(withRootObject: currentiCloudToken) as NSData
             print("token \(newTokenData)")
-            UserDefaults.standard.set(newTokenData, forKey: "com.yarshure.surf.UbiquityIdentityToken")
+            UserDefaults.standard.set(newTokenData, forKey: "com.jeffery.surf.UbiquityIdentityToken")
             _ = NSKeyedArchiver.archivedData(withRootObject: currentiCloudToken)
             //setObject: newTokenData
             //forKey: @"com.apple.MyAppName.UbiquityIdentityToken"];
         }else {
             UserDefaults.standard
-                .removeObject(forKey: "com.yarshure.surf.UbiquityIdentityToken")
+                .removeObject(forKey: "com.jeffery.surf.UbiquityIdentityToken")
         }
         NotificationCenter.default.addObserver(forName: NSNotification.Name.NSUbiquityIdentityDidChange, object: nil, queue: OperationQueue.main) { (noti:Notification) in
             print("NSUbiquityIdentityDidChangeNotification")

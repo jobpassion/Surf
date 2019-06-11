@@ -14,7 +14,7 @@
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.yarshure.Surf</string>
+		<string>group.com.jeffery.Surf</string>
 	</array>
 </dict>
 </plist>

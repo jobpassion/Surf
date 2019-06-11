@@ -17,14 +17,14 @@ let DefaultConfig = "Default.conf"
 
 
 #if os(iOS)
-let groupIdentifier = "group.com.yarshure.Surf"
+let groupIdentifier = "group.com.jeffery.Surf"
 #else
-    let groupIdentifier = "745WQDK4L7.com.yarshure.Surf"
+    let groupIdentifier = "745WQDK4L7.com.jeffery.Surf"
 #endif
 let configExt = ".conf"
-let packetconfig = "group.com.yarshure.config"
-let flagconfig = "group.com.yarshure.flag"
-let onDemandKey = "com.yarshure.onDemandKey"
+let packetconfig = "group.com.jeffery.config"
+let flagconfig = "group.com.jeffery.flag"
+let onDemandKey = "com.jeffery.onDemandKey"
 let errDomain = "com.abigt.socket"
 let fm = FileManager.default
 
@@ -52,11 +52,11 @@ let kProxyGroup = "ProxyGroup"
 let kProxyGroupFile = ".ProxyGroup"
 var groupContainerURLVPN:String = ""
 
-let iOSAppIden = "com.yarshure.Surf"
-let iOSTodayIden = "com.yarshure.Surf.SurfToday"
-let MacAppIden = "com.yarshure.Surf.mac"
-let MacTunnelIden = "com.yarshure.Surf.mac.extension"
-let iOSTunnelIden =  "com.yarshure.Surf.PacketTunnel"
+let iOSAppIden = "com.jeffery.Surf"
+let iOSTodayIden = "com.jeffery.Surf.SurfToday"
+let MacAppIden = "com.jeffery.Surf.mac"
+let MacTunnelIden = "com.jeffery.Surf.mac.extension"
+let iOSTunnelIden =  "com.jeffery.Surf.PacketTunnel"
 let configMacFn = "abigt.conf"
 
 let NOTIFY_SERVER_PROFILES_CHANGED = "NOTIFY_SERVER_PROFILES_CHANGED"
@@ -67,7 +67,7 @@ let NOTIFY_INVALIDE_QR = "NOTIFY_INVALIDE_QR"
 
 let bId = Bundle.main.infoDictionary!["CFBundleIdentifier"] as! String
 let  applicationDocumentsDirectory: URL = {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.yarshuremac.test" in the application's documents Application Support directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.jefferymac.test" in the application's documents Application Support directory.
     let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
     return urls[urls.count-1]
 }()

@@ -292,6 +292,9 @@
 		69F8B0E11F6222FD00CA85CE /* RuleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694536B61C72E74800C4595D /* RuleTableViewController.swift */; };
 		69F8B0E21F62231700CA85CE /* DNSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6964C0A81CF544570021897B /* DNSViewController.swift */; };
 		69FDC2401ED5B2D100A19081 /* RecentReqViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FDC23F1ED5B2D100A19081 /* RecentReqViewController.swift */; };
+		7B70D3E322AE543900EC185A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70D3E222AE543900EC185A /* NetworkExtension.framework */; };
+		7B70D3E422AE556900EC185A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70D3E222AE543900EC185A /* NetworkExtension.framework */; };
+		7B70D3E522AE56C900EC185A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B70D3E222AE543900EC185A /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,6 +311,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 69C4EE3B1C29193D0020FBF8;
 			remoteInfo = "PacketTunnel-Mac";
+		};
+		7B8100D522AE586B004A7319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69366E4E1BFECBE700AE123D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 578ED9281C03181200913B2F;
+			remoteInfo = "PacketTunnel-iOS";
+		};
+		7B8100D722AE5871004A7319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69366E4E1BFECBE700AE123D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 692D8CF61C6A250400C07B3A;
+			remoteInfo = SurfToday;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -633,6 +650,7 @@
 		69F5C359203045AE0075B8E0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		69F698E91DDC21ED00966272 /* DarwinCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DarwinCore.framework; path = Carthage/Build/iOS/DarwinCore.framework; sourceTree = "<group>"; };
 		69FDC23F1ED5B2D100A19081 /* RecentReqViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentReqViewController.swift; sourceTree = "<group>"; };
+		7B70D3E222AE543900EC185A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -644,6 +662,7 @@
 				697B7C3F1DDF41F400584179 /* MMDB.framework in Frameworks */,
 				693B744B1ED9FA69004C6E87 /* SFSocket.framework in Frameworks */,
 				69C16276222F613B003443AD /* Fabric.framework in Frameworks */,
+				7B70D3E422AE556900EC185A /* NetworkExtension.framework in Frameworks */,
 				69BD54C61E975C88008F10DC /* Reachability.framework in Frameworks */,
 				6970CDDB1CE46710009850DE /* Security.framework in Frameworks */,
 				691B366D1C0F4BAE001C815D /* libresolv.tbd in Frameworks */,
@@ -659,6 +678,7 @@
 				69524B051D2E091C00FA4DC7 /* CFNetwork.framework in Frameworks */,
 				69DD43271DDC2D4800080CF1 /* SwiftyJSON.framework in Frameworks */,
 				69C16277222F613B003443AD /* Fabric.framework in Frameworks */,
+				7B70D3E522AE56C900EC185A /* NetworkExtension.framework in Frameworks */,
 				693B744C1ED9FA69004C6E87 /* SFSocket.framework in Frameworks */,
 				69524B031D2E08F100FA4DC7 /* SystemConfiguration.framework in Frameworks */,
 				692D8CFA1C6A250400C07B3A /* NotificationCenter.framework in Frameworks */,
@@ -683,6 +703,7 @@
 				6906B7661EF36B5B00CA66CA /* SwiftyStoreKit.framework in Frameworks */,
 				696702141CFBE6A8008D36C8 /* SystemConfiguration.framework in Frameworks */,
 				690AB8761E9764A9001A6C3A /* MMDB.framework in Frameworks */,
+				7B70D3E322AE543900EC185A /* NetworkExtension.framework in Frameworks */,
 				690AB8851E97652F001A6C3A /* ObjectMapper.framework in Frameworks */,
 				69852BEA1F3313FE00EBFC92 /* SystemKitiOS.framework in Frameworks */,
 				69639BC71EE1636700893D18 /* DarwinCore.framework in Frameworks */,
@@ -822,6 +843,7 @@
 		692D8CF81C6A250400C07B3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B70D3E222AE543900EC185A /* NetworkExtension.framework */,
 				69784D351DE0A423007E32C2 /* MacFrameworks */,
 				693AAE74200EE991009E481E /* ios */,
 				69BFCCE31DE3543200469B8C /* libswiftCoreImage.tbd */,
@@ -1273,6 +1295,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				7B8100D822AE5871004A7319 /* PBXTargetDependency */,
+				7B8100D622AE586B004A7319 /* PBXTargetDependency */,
 			);
 			name = Surf;
 			productName = Surf;
@@ -1348,10 +1372,13 @@
 				TargetAttributes = {
 					578ED9281C03181200913B2F = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 745WQDK4L7;
+						DevelopmentTeam = LEPB33WFFM;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 0;
 							};
@@ -1368,10 +1395,13 @@
 					};
 					692D8CF61C6A250400C07B3A = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 745WQDK4L7;
+						DevelopmentTeam = LEPB33WFFM;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 0;
 							};
@@ -1379,10 +1409,13 @@
 					};
 					69366E551BFECBE700AE123D = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = 745WQDK4L7;
+						DevelopmentTeam = LEPB33WFFM;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 0;
 							};
@@ -1779,6 +1812,16 @@
 			target = 69C4EE3B1C29193D0020FBF8 /* PacketTunnel-Mac */;
 			targetProxy = 69784D621DE0A8B1007E32C2 /* PBXContainerItemProxy */;
 		};
+		7B8100D622AE586B004A7319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 578ED9281C03181200913B2F /* PacketTunnel-iOS */;
+			targetProxy = 7B8100D522AE586B004A7319 /* PBXContainerItemProxy */;
+		};
+		7B8100D822AE5871004A7319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 692D8CF61C6A250400C07B3A /* SurfToday */;
+			targetProxy = 7B8100D722AE5871004A7319 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1895,9 +1938,10 @@
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/iOS/PacketTunnel.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 745WQDK4L7;
+				DEVELOPMENT_TEAM = LEPB33WFFM;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1917,10 +1961,10 @@
 					"-lstdc++",
 					"-lz",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yarshure.Surf4.PacketTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffery.Surf4.PacketTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "eef210fb-7ea4-4a7d-8f18-4ff2f1e1da2b";
-				PROVISIONING_PROFILE_SPECIFIER = packet4;
+				PROVISIONING_PROFILE_SPECIFIER = surftunnel;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG TIMER";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/";
@@ -1939,10 +1983,11 @@
 			buildSettings = {
 				CLANG_ADDRESS_SANITIZER_CONTAINER_OVERFLOW = NO;
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/iOS/PacketTunnel.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 745WQDK4L7;
+				DEVELOPMENT_TEAM = LEPB33WFFM;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1962,10 +2007,10 @@
 					"-lstdc++",
 					"-lz",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yarshure.Surf4.PacketTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffery.Surf4.PacketTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7fd37df6-507e-430d-b3cb-3fefc31a34c9";
-				PROVISIONING_PROFILE_SPECIFIER = p4_store;
+				PROVISIONING_PROFILE_SPECIFIER = surftunnel;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TIMER;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/";
@@ -1987,7 +2032,7 @@
 				CODE_SIGN_ENTITLEMENTS = SurfToday/today.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 745WQDK4L7;
+				DEVELOPMENT_TEAM = LEPB33WFFM;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1996,10 +2041,10 @@
 				INFOPLIST_FILE = SurfToday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yarshure.Surf4.SurfToday;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffery.Surf4.SurfToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "59e3bf3a-c4e8-4483-9520-d27b72ce9e7d";
-				PROVISIONING_PROFILE_SPECIFIER = today4;
+				PROVISIONING_PROFILE_SPECIFIER = surftoday;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
@@ -2026,7 +2071,7 @@
 				INFOPLIST_FILE = SurfToday/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yarshure.Surf4.SurfToday;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffery.Surf4.SurfToday;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "139784b1-3780-497b-9e2d-1a0143bd5c52";
 				PROVISIONING_PROFILE_SPECIFIER = t4_store;
@@ -2159,7 +2204,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = 745WQDK4L7;
+				DEVELOPMENT_TEAM = LEPB33WFFM;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2175,7 +2220,7 @@
 				INFOPLIST_FILE = Surf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yarshure.Surf4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffery.Surf4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "50f70c2f-e901-4ca4-8350-00d243405d6c";
 				PROVISIONING_PROFILE_SPECIFIER = surf4;
@@ -2202,7 +2247,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = 745WQDK4L7;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2218,10 +2263,10 @@
 				INFOPLIST_FILE = Surf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yarshure.Surf4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jeffery.Surf4;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "45b84108-92f7-4189-ae31-1e3e452acbe5";
-				PROVISIONING_PROFILE_SPECIFIER = sf4_store;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
